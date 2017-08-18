@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
+@IonicPage()
 @Component({
   selector: 'page-about',
   templateUrl: 'about.html'
@@ -34,5 +35,9 @@ export class AboutPage {
 
   ionViewDidLeave() {
     console.log(`${this.page} did leave`);
+  }
+
+  openChild() {
+    this.navCtrl.push('ChildPage');
   }
 }
