@@ -5,7 +5,6 @@ import { AboutPage } from './about';
 
 @NgModule({
   imports: [IonicPageModule.forChild(AboutPage)],
-  declarations: [AboutPage],
-  entryComponents:[AboutPage]
+  declarations: [AboutPage]
 })
 export class AboutPageModule { }

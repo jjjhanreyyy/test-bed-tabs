@@ -5,7 +5,6 @@ import { ContactPage } from './contact';
 
 @NgModule({
   imports: [IonicPageModule.forChild(ContactPage)],
-  declarations: [ContactPage],
-  entryComponents:[ContactPage]
+  declarations: [ContactPage]
 })
 export class ContactPageModule { }
