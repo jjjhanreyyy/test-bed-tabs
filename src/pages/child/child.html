@@ -8,5 +8,13 @@
 
 
 <ion-content padding>
-  <div>I am just a simple child page</div>
+  <ion-list>
+    <ion-item>
+      <div>I am child one</div>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button (click)="openChild('ChildTwoPage')">Open Child Page Two</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -11,4 +11,6 @@ export class HomePage {
 
   constructor(private navCtrl: NavController) { }
 
+  ionViewDidEnter() { console.log(this.constructor.name, 'ionViewDidEnter'); }
+  ionViewDidLoad() { console.log(this.constructor.name, 'ionViewDidLoad');}
 }

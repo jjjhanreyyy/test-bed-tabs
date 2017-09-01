@@ -7,5 +7,16 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="openChild()">Open Child Page</button>
+  <ion-list>
+    <ion-item>
+      <button ion-button (click)="openChild('ChildPage')">Open Child Page One</button>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="openChild('ChildTwoPage')">Open Child Page Two</button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Date:</ion-label>
+      <ion-datetime displayFormat="M/YYYY" pickerFormat="M YYYY"></ion-datetime>
+    </ion-item>
+  </ion-list>
 </ion-content>
