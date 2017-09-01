@@ -5,16 +5,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   segment: 'child'
 })
 @Component({
-  selector: 'page-child',
-  templateUrl: 'child.html',
+  selector: 'page-child-two',
+  templateUrl: 'child-two.html',
 })
-export class ChildPage {
+export class ChildTwoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidEnter() { console.log(this.constructor.name, 'ionViewDidEnter'); }
   ionViewDidLoad() { console.log(this.constructor.name, 'ionViewDidLoad');}
-
-  openChild(pg: string) { this.navCtrl.push(pg); }
 }

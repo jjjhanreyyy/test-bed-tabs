@@ -13,7 +13,8 @@ export class AboutPage {
 
   constructor(public navCtrl: NavController) { }
 
-  openChild() {
-    this.navCtrl.push('ChildPage');
-  }
+  ionViewDidEnter() { console.log(this.constructor.name, 'ionViewDidEnter'); }
+  ionViewDidLoad() { console.log(this.constructor.name, 'ionViewDidLoad');}
+
+  openChild(pg: string) { this.navCtrl.push(pg); }
 }
