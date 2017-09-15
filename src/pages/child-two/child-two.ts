@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage({
-  segment: 'child'
+  segment: 'child',
+  defaultHistory: ['AboutPage']
 })
 @Component({
   selector: 'page-child-two',
