@@ -20,6 +20,10 @@ export class ChildTwoPage {
     this.setItems();
   }
 
+  didPress() {
+    console.log('did a press');
+  }
+
   setItems() {
     this.items = ['Orange', 'Banana', 'Pear', 'Tomato', 'Grape', 'Apple', 'Cherries', 'Cranberries', 'Raspberries', 'Strawberries', 'Watermelon'];
   }

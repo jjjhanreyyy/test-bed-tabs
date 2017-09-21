@@ -5,13 +5,39 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Tapped: {{tap}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (press)="pressEvent($event)">
+    <ion-item>
+      Pressed: {{press}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (pan)="panEvent($event)">
+    <ion-item>
+      Panned: {{pan}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (swipe)="swipeEvent($event)">
+    <ion-item>
+      Swiped: {{swipe}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (pinch)="pinchEvent($event)">
+    <ion-item>
+      Pinched: {{pinch}} times
+    </ion-item>
+  </ion-card>
+
+  <ion-card (rotate)="rotateEvent($event)">
+    <ion-item>
+      Rotate: {{rotate}} times
+    </ion-item>
+  </ion-card>
 </ion-content>
