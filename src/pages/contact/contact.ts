@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,7 +9,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 export class ContactPage {
   page = 'ContactPage';
 
-  constructor(private navCtrl: NavController) { }
+  constructor() { }
 
   ionViewDidEnter() { console.log(this.constructor.name, 'ionViewDidEnter'); }
   ionViewDidLoad() { console.log(this.constructor.name, 'ionViewDidLoad');}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -15,6 +15,8 @@ export class HomePage {
   public rotate: number = 0;
   public swipe: number = 0;
   public tap: number = 0;
+
+  isPaused: boolean;
 
   constructor() { }
 

@@ -5,39 +5,54 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card (tap)="tapEvent($event)">
+  <ion-list>
     <ion-item>
-      Tapped: {{tap}} times
+      <ion-card (tap)="tapEvent($event)">
+        <ion-item>
+          Tapped: {{tap}} times
+        </ion-item>
+      </ion-card>
     </ion-item>
-  </ion-card>
-
-  <ion-card (press)="pressEvent($event)">
     <ion-item>
-      Pressed: {{press}} times
+      <ion-card (press)="pressEvent($event)">
+        <ion-item>
+          Pressed: {{press}} times
+        </ion-item>
+      </ion-card>
     </ion-item>
-  </ion-card>
-
-  <ion-card (pan)="panEvent($event)">
     <ion-item>
-      Panned: {{pan}} times
+      <ion-card (pan)="panEvent($event)">
+        <ion-item>
+          Panned: {{pan}} times
+        </ion-item>
+      </ion-card>
     </ion-item>
-  </ion-card>
-
-  <ion-card (swipe)="swipeEvent($event)">
     <ion-item>
-      Swiped: {{swipe}} times
+      <ion-card (swipe)="swipeEvent($event)">
+        <ion-item>
+          Swiped: {{swipe}} times
+        </ion-item>
+      </ion-card>
     </ion-item>
-  </ion-card>
-
-  <ion-card (pinch)="pinchEvent($event)">
     <ion-item>
-      Pinched: {{pinch}} times
+      <ion-card (pinch)="pinchEvent($event)">
+        <ion-item>
+          Pinched: {{pinch}} times
+        </ion-item>
+      </ion-card>
     </ion-item>
-  </ion-card>
-
-  <ion-card (rotate)="rotateEvent($event)">
     <ion-item>
-      Rotate: {{rotate}} times
+      <ion-card (rotate)="rotateEvent($event)">
+        <ion-item>
+          Rotate: {{rotate}} times
+        </ion-item>
+      </ion-card>
     </ion-item>
-  </ion-card>
+    <ion-item>
+      <ion-spinner name="crescent" [paused]="isPaused"></ion-spinner> {{isPaused}}
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="isPaused = !isPaused">Toggle Spinner</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

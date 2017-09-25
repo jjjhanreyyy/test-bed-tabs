@@ -7,7 +7,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 @Component({
   selector: 'page-child-two',
-  templateUrl: 'child-two.html',
+  templateUrl: 'child-two.html'
 })
 export class ChildTwoPage {
 
