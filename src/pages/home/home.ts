@@ -9,12 +9,10 @@ import { IonicPage } from 'ionic-angular';
 export class HomePage {
   page = 'HomePage';
 
-  public press: number = 0;
-  public pan: number = 0;
-  public pinch: number = 0;
-  public rotate: number = 0;
-  public swipe: number = 0;
-  public tap: number = 0;
+  press: number = 0;
+  pan: number = 0;
+  swipe: number = 0;
+  tap: number = 0;
 
   isPaused: boolean;
 
@@ -34,13 +32,5 @@ export class HomePage {
 
   tapEvent(e) {
     this.tap++
-  }
-
-  pinchEvent(e) {
-    this.pinch++
-  }
-
-  rotateEvent(e) {
-    this.rotate++
   }
 }
