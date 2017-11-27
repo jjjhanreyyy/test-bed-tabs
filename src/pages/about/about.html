@@ -20,6 +20,14 @@
       <button ion-button (click)="openChild('ChildTwoPage')">Open Child Page Two</button>
     </ion-item>
     <ion-item>
+      <ion-label><strong>Request date</strong></ion-label>
+      <ion-datetime displayFormat="MMMM D, YYYY"
+                    min="2017-11-24"
+                    max="2020-12-31"
+                    [(ngModel)]="requestDate">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
       <ion-label>Date:</ion-label>
       <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY MM DD"></ion-datetime>
     </ion-item>

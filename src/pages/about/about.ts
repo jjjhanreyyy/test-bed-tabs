@@ -10,6 +10,7 @@ import { IonicPage, NavController } from 'ionic-angular';
 })
 export class AboutPage {
   page = 'AboutPage';
+  requestDate = new Date('2017-11-24').toISOString();
 
   constructor(public navCtrl: NavController) { }
 
