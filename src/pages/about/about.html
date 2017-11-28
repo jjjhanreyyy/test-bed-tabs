@@ -29,7 +29,10 @@
     </ion-item>
     <ion-item>
       <ion-label>Date:</ion-label>
-      <ion-datetime displayFormat="YYYY/MM/DD" pickerFormat="YYYY MM DD"></ion-datetime>
+      <ion-datetime  displayFormat="YYYY/MM/DD HH:mm" pickerFormat="YYYY MM DD HH:mm" [initialValue]="startDate" [(ngModel)]="otherDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="logDate()">Log Date</button>
     </ion-item>
   </ion-list>
 </ion-content>
